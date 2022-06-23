@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'SpeelOpVeilig';
+    src: url('SpeelOpVeilig.eot');
+    src: url('SpeelOpVeilig.eot') format('embedded-opentype'),
+        url('SpeelOpVeilig.ttf') format('truetype'),
+        url('SpeelOpVeilig.woff') format('woff'),
+        url('SpeelOpVeilig.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-speel-op-veilig"]:before ,
+[class*=" icon-speel-op-veilig"]:before  {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'SpeelOpVeilig' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* -------- inherit color ---------- */
+.icon-speel-op-veilig-vuur:before {
+    content: "\31";
+}
+
+.icon-speel-op-veilig-water:before {
+    content: "\32";
+}
+
+.icon-speel-op-veilig-hoogte:before {
+    content: "\33";
+}
+
+.icon-speel-op-veilig-materiaal:before {
+    content: "\34";
+}
+
+.icon-speel-op-veilig-verkeer:before {
+    content: "\35";
+}
+
+.icon-speel-op-veilig-drugs-tabak-en-alcohol:before {
+    content: "\36";
+}
+
+.icon-speel-op-veilig-welzijn:before {
+    content: "\37";
+}
+
+.icon-speel-op-veilig-wet:before {
+    content: "\38";
+}
+
+.icon-speel-op-veilig-regel:before {
+    content: "\39";
+}
+
+.icon-speel-op-veilig-richtlijn:before {
+    content: "\61";
+}
+
+.icon-speel-op-veilig-suggestie:before {
+    content: "\62";
+}
+
+/* -------- true color ---------- */
+.icon-speel-op-veilig-vuur-color:before {
+    content: "\31";
+    color: #572600;
+}
+
+.icon-speel-op-veilig-water-color:before {
+    content: "\32";
+    color: #572600;
+}
+
+.icon-speel-op-veilig-hoogte-color:before {
+    content: "\33";
+    color: #572600;
+}
+
+.icon-speel-op-veilig-materiaal-color:before {
+    content: "\34";
+    color: #572600;
+}
+
+.icon-speel-op-veilig-verkeer-color:before {
+    content: "\35";
+    color: #572600;
+}
+
+.icon-speel-op-veilig-drugs-tabak-en-alcohol-color:before {
+    content: "\36";
+    color: #572600;
+}
+
+.icon-speel-op-veilig-welzijn-color:before {
+    content: "\37";
+    color: #572600;
+}
+
+.icon-speel-op-veilig-wet-color:before {
+    content: "\38";
+    color: #ed1c23;
+}
+
+.icon-speel-op-veilig-regel-color:before {
+    content: "\39";
+    color: #f5821f;
+}
+
+.icon-speel-op-veilig-richtlijn-color:before {
+    content: "\61";
+    color: #256f91;
+}
+
+.icon-speel-op-veilig-suggestie-color:before {
+    content: "\62";
+    color: #748d26;
+}

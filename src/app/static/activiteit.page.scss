@@ -1,0 +1,40 @@
+#checklist {
+    li {
+        list-style-type: none;
+        margin-bottom: 10px;
+    }
+    input {
+        appearance: none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        -o-appearance:none;
+        background-color: #ffff;
+        border: 1px solid var(--ion-color-dark);
+        border-bottom:4px solid var(--ion-color-dark) ;
+        border-right:4px solid var(--ion-color-dark) ;
+        padding-left: 2px;
+        margin-left: -30px;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        vertical-align: text-top;
+    }
+    input:checked {
+        display: inline-block;
+        background-color: #ffff;
+        border: 1px solid var(--ion-color-dark);
+        border-bottom:4px solid var(--ion-color-dark) ;
+        border-right:4px solid var(--ion-color-dark) ;
+        left: 8px;
+        top: 4px;
+        width: 25px;
+        height: 25px;
+       
+    }
+    input:checked:before {
+        content: '\2714';
+        font-size: 18px;
+        color: var(--ion-color-dark) ;
+    }
+    
+}

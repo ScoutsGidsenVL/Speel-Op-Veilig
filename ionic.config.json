@@ -1,5 +1,7 @@
 {
   "name": "Speel-Op-Veilig",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

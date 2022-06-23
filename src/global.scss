@@ -1,26 +1,209 @@
-/*
- * App Global CSS
- * ----------------------------------------------------------------------------
- * Put style rules here that you want to apply globally. These styles are for
- * the entire app and not just one component. Additionally, this file can be
- * used as an entry point to import other CSS/Sass files to be included in the
- * output CSS.
- * For more information on global stylesheets, visit the documentation:
- * https://ionicframework.com/docs/layout/global-stylesheets
- */
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
 
-/* Core CSS required for Ionic components to work properly */
-@import "~@ionic/angular/css/core.css";
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
 
-/* Basic CSS for apps built with Ionic */
-@import "~@ionic/angular/css/normalize.css";
-@import "~@ionic/angular/css/structure.css";
-@import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+//@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+//@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
 
-/* Optional CSS utils that can be commented out */
-@import "~@ionic/angular/css/padding.css";
-@import "~@ionic/angular/css/float-elements.css";
-@import "~@ionic/angular/css/text-alignment.css";
-@import "~@ionic/angular/css/text-transformation.css";
-@import "~@ionic/angular/css/flex-utils.css";
+@font-face {
+  font-family: 'DCCAsh';
+  src: url(./assets/fonts/DCC_Ash/dccash-webfont.eot);
+  src:
+    url(./assets/fonts/DCC_Ash/dccash-webfont.eot) format('embedded-opentype'),
+    url(./assets/fonts/DCC_Ash/dccash-webfont.woff2) format('woff2'),
+    url(./assets/fonts/DCC_Ash/dccash-webfont.woff) format('woff'),
+    url(./assets/fonts/DCC_Ash/dccash-webfont.ttf) format('truetype'),
+    url(./assets/fonts/DCC_Ash/dccash-webfont.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Alfa Slab One';
+  src:  url(./assets/fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf) ;
+}
+@font-face {
+  font-family: 'Fjalla One';
+  src:  url(./assets/fonts/Fjalla_One/FjallaOne-Regular.ttf) ;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src:  url(./assets/fonts/Open_Sans/OpenSans-Regular.ttf) ;
+}
+
+
+:root {
+  --font-title: "DCCAsh";
+  --font-sub-title:"Fjalla One", sans-serif;
+  --ion-font-family: "Open Sans", sans-serif;
+
+  --ion-color-primary: #748d26;
+  --ion-color-primary-rgb: 116,141,38;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255,255,255;
+  --ion-color-primary-shade: #667c21;
+  --ion-color-primary-tint: #82983c;
+
+  --ion-color-secondary: #bdd732;
+  --ion-color-secondary-rgb: 189,215,50;
+  --ion-color-secondary-contrast: #000000;
+  --ion-color-secondary-contrast-rgb: 0,0,0;
+  --ion-color-secondary-shade: #a6bd2c;
+  --ion-color-secondary-tint: #c4db47;
+
+  --ion-color-tertiary: #256f91;
+  --ion-color-tertiary-rgb: 37,111,145;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255,255,255;
+  --ion-color-tertiary-shade: #216280;
+  --ion-color-tertiary-tint: #3b7d9c;
+
+  --ion-color-success: #bdd732;
+  --ion-color-success-rgb: 189,215,50;
+  --ion-color-success-contrast: #000000;
+  --ion-color-success-contrast-rgb: 0,0,0;
+  --ion-color-success-shade: #a6bd2c;
+  --ion-color-success-tint: #c4db47;
+
+  --ion-color-warning: #f5821f;
+  --ion-color-warning-rgb: 245,130,31;
+  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-contrast-rgb: 0,0,0;
+  --ion-color-warning-shade: #d8721b;
+  --ion-color-warning-tint: #f68f35;
+
+  --ion-color-danger: #ed1c23;
+  --ion-color-danger-rgb: 237,28,35;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255,255,255;
+  --ion-color-danger-shade: #d1191f;
+  --ion-color-danger-tint: #ef3339;
+
+  --ion-color-dark: #572600;
+  --ion-color-dark-rgb: 87,38,0;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255,255,255;
+  --ion-color-dark-shade: #4d2100;
+  --ion-color-dark-tint: #683c1a;
+
+  --ion-color-medium: #989aa2;
+  --ion-color-medium-rgb: 152,154,162;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255,255,255;
+  --ion-color-medium-shade: #86888f;
+  --ion-color-medium-tint: #a2a4ab;
+
+  --ion-color-light: #f4f5f8;
+  --ion-color-light-rgb: 244,244,244;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0,0,0;
+  --ion-color-light-shade: #d7d8da;
+  --ion-color-light-tint: #f5f6f9;
+
+  --ion-toolbar-background: --ion-color-dark;
+
+
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 16px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: var(--font-title);
+}
+
+
+ion-header {
+  background-color: var(--ion-color-dark);
+  ion-toolbar {
+    background-color: var(--ion-color-dark);
+    ion-title {
+      color:  var(--ion-color-light);
+      font-family: var(--font-title);
+      letter-spacing: 1px;
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+  }
+}
+
+
+article {
+  margin-bottom: 25px;
+  h1 {
+    font-family: var(--font-title);
+    letter-spacing: 1px;
+    color: var(--ion-color-primary);
+    font-size: 1.8rem;
+    font-weight: normal;
+    clear: both;
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .wet {
+    color: var(--ion-color-danger);
+  }
+
+  .regel {
+    color: var(--ion-color-warning);
+  }
+
+  .richtlijn {
+    color: var(--ion-color-tertiary);
+  }
+
+  .suggestie {
+    color: var(--ion-color-primary);
+  }
+
+}
+
+
+
+ion-list {
+  ion-label {
+    font-family: var(--font-title);
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    color: var(--ion-color-secondary);
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  ion-item {
+    ion-label {
+      text-transform: none;
+    }
+  }
+}
+
+ion-back-button {
+  button {
+    span {
+      ion-icon {
+        color: var(--ion-color-secondary);
+      }
+      .button-text {
+        color: var(--ion-color-secondary);
+      }
+    }
+  }
+}
+
+.in-toolbar {
+  color: white !important;
+}
+
+.padding-lr-8px {
+  padding-left: 8px;
+  padding-right: 8px;
+}

@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="home" text="Terug"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Vraag en Antwoord</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item id="filter">
+        <p>Filter op tak:</p>
+        <ion-select multiple="true" cancelText="Annuleer" okText="Filter" (ionChange)="filterGroups($event)"  placeholder="Kies een tak..." >
+            <ion-select-option  *ngFor="let f of filterArr" value="{{ f }}">{{ originalFilter[f] }}</ion-select-option>
+        </ion-select>
+    </ion-item>
+
+
+
+    <section *ngFor="let chapter of questions">
+
+        <h1>
+            <a href="/thema/{{chapter.url}}">
+                <span class="icon-speel-op-veilig-{{ chapter.icon }}-color"></span> {{ chapter.title }}
+            </a>
+        </h1>
+        <div *ngFor="let question of chapter.content">
+            {{ question.type }}
+            <h2>{{ question.question }} <span class="icon-speel-op-veilig-regel" *ngIf="question.type === 'wet'" > Regel</span></h2>
+            <div *ngFor="let answer of question.answers" >
+                <div *ngIf="checkGroupFilter(answer)">
+                    <p class="answer"> <span *ngIf="countKeysInFilter() > 1">{{ originalFilter[answer.group] }}:</span><br *ngIf="countKeysInFilter() > 1"><i>{{ answer.answer }}</i> </p>
+
+                </div>
+            </div>
+        </div>
+        <a href="/thema/{{chapter.url}}">
+            Meer lezen over {{chapter.title}}...
+        </a>
+    </section>
+</ion-content>

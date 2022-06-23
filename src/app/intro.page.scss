@@ -1,0 +1,17 @@
+ion-content {
+    --background:none;
+    background-image: url("/assets/images/algemeen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    p {
+        font-family: "DCCAsh";
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+        color: var(--ion-color-light);
+        margin-top: 60px;
+    }
+}
+
+.content-padding {
+  padding-left: 20px !important;
+}
