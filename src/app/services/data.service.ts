@@ -1534,7 +1534,7 @@ export class DataService {
               },
               {
                 "title": "Richtlijnen Scouts en Gidsen Vlaanderen over welzijn",
-                "type": "ichtlijn",
+                "type": "richtlijn",
                 "list": [
                   {
                     "item": "Zorg voor spannende en uitdagende activiteiten zonder dat leden werkelijk bang worden. Kinderen moeten neen kunnen zeggen en die keuze moet gerespecteerd worden, ook bij rituelen die al lang meegaan.",
@@ -1922,6 +1922,7 @@ export class DataService {
   }
 
   getchapterBytitle(title) {
+    console.log(title);
     return this.chapters.find(t => t.url == title);
   }
 

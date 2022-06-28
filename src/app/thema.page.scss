@@ -46,7 +46,7 @@
         color: var(--ion-color-secondary);
         margin-left: 10px;
     }
-    
+
 }
 
 ul {
@@ -57,7 +57,7 @@ ul {
     margin-bottom: 0px;
     margin-top: 0px;
     width: 100%;
-   
+
     li {
         font-size: 1.2rem;
         padding-bottom: 1rem;
@@ -72,6 +72,7 @@ ul {
             p{
                 float: left;
                 width: 93%;
+                color: var(--ion-color-dark);
             }
 
         }
@@ -96,9 +97,19 @@ ion-icon{
 }
 .sublist {
     margin-left: 5px;
-    
+
     li {
         list-style-type: none;
         width: 90%;
     }
 }
+
+ion-content {
+  background: #fff
+}
+
+
+.suggestie-description {
+   color: #000 !important;
+}
+

@@ -4,3 +4,27 @@ ion-list-header ion-label {
 ion-item ion-label {
     color: var(--ion-color-dark);
 }
+
+ion-content {
+    background: #fff !important;
+}
+
+ion-list {
+    background: #fff !important;
+}
+
+ion-item {
+    background: #fff !important;
+}
+
+.toolbar-title {
+  color: white !important;
+}
+
+.home-item {
+  color: #fff !important;
+}
+
+.item-native {
+   background-color: #000 !important;
+}

@@ -8,3 +8,14 @@ ion-card {
     background: var(--ion-color-secondary);
     color: #fff;
 }
+
+article {
+  p {
+     color: var(--ion-color-dark);
+  }
+  ul {
+    li {
+      color: #000;
+    }
+  }
+}

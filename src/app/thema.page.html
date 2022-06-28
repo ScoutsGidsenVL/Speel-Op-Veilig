@@ -11,8 +11,8 @@
     <section *ngFor="let subchapter of chapter.subchapters"  class="chapter">
         <h1 *ngIf="subchapter.title && subchapter.content">{{ subchapter.title }}</h1>
         <article *ngFor="let content of subchapter.content" class="subchapter">
-            <h2 [ngClass]="{'wet': content.type=='wet','regel': content.type=='regel', 'richtlijn': content.type=='richtlijn', 'suggestie': content.type=='suggestie'  }">{{ content.title }}</h2>
-            <p *ngIf="content.description">{{ content.description }}</p>
+            <h2 [ngClass]="{'wet': content.type==='wet','regel': content.type==='regel', 'richtlijn': content.type==='richtlijn', 'suggestie': content.type==='suggestie'  }">{{ content.title }}</h2>
+            <p [ngClass]="{ 'suggestie-description': content.type==='suggestie' }" *ngIf="content.description">{{ content.description }}</p>
             <ul>
 
                 <li *ngFor="let item of content.list" class="clearfix" >

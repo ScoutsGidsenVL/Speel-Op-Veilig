@@ -8,7 +8,7 @@ ion-card {
     }
     ion-card-header {
         ion-card-title {
-            color: var(--ion-color-danger); 
+            color: var(--ion-color-danger);
             font-family: var(--font-title);
             font-size: 1.8rem;
             font-weight: normal;
@@ -22,4 +22,15 @@ ion-card {
             padding-left: -20px
         }
     }
+}
+
+article {
+  p {
+     color: var(--ion-color-dark);
+  }
+  ul {
+    li {
+      color: #000;
+    }
+  }
 }

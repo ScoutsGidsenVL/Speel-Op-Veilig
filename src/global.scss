@@ -108,9 +108,11 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 
-  --ion-toolbar-background: --ion-color-dark;
+  --ion-toolbar-background: #572600;
 
-
+  .item-native {
+    background-color: #fff !important;
+  }
 }
 h1, h2, h3, h4, h5, h6 {
   margin-top: 16px;
@@ -122,11 +124,11 @@ h1, h2, h3, h4, h5, h6 {
 
 
 ion-header {
-  background-color: var(--ion-color-dark);
+  background-color: #f4f5f8;
   ion-toolbar {
-    background-color: var(--ion-color-dark);
+    background-color: #f4f5f8;
     ion-title {
-      color:  var(--ion-color-light);
+      color:  #ffffff;
       font-family: var(--font-title);
       letter-spacing: 1px;
       font-size: 2rem;
@@ -142,7 +144,7 @@ article {
   h1 {
     font-family: var(--font-title);
     letter-spacing: 1px;
-    color: var(--ion-color-primary);
+    color: #748d26;
     font-size: 1.8rem;
     font-weight: normal;
     clear: both;
@@ -151,21 +153,20 @@ article {
     margin-bottom: 0px;
   }
   .wet {
-    color: var(--ion-color-danger);
+    color: #ff4961;
   }
 
   .regel {
-    color: var(--ion-color-warning);
+    color: #ffd534;
   }
 
   .richtlijn {
-    color: var(--ion-color-tertiary);
+    color: #6a64ff;
   }
 
   .suggestie {
-    color: var(--ion-color-primary);
+    color: #748d26;
   }
-
 }
 
 
@@ -180,10 +181,15 @@ ion-list {
     text-transform: uppercase;
   }
   ion-item {
+
     ion-label {
       text-transform: none;
     }
   }
+}
+
+ion-item::part(native) {
+      background-color: #fff !important;
 }
 
 ion-back-button {
@@ -198,6 +204,8 @@ ion-back-button {
     }
   }
 }
+
+
 
 .in-toolbar {
   color: white !important;

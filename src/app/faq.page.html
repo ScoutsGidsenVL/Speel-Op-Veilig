@@ -18,14 +18,10 @@
 
 
     <section *ngFor="let chapter of questions">
-
         <h1>
-            <a href="/thema/{{chapter.url}}">
-                <span class="icon-speel-op-veilig-{{ chapter.icon }}-color"></span> {{ chapter.title }}
-            </a>
+          <span class="icon-speel-op-veilig-{{ chapter.icon }}-color"></span> {{ chapter.title }}
         </h1>
         <div *ngFor="let question of chapter.content">
-            {{ question.type }}
             <h2>{{ question.question }} <span class="icon-speel-op-veilig-regel" *ngIf="question.type === 'wet'" > Regel</span></h2>
             <div *ngFor="let answer of question.answers" >
                 <div *ngIf="checkGroupFilter(answer)">
@@ -34,7 +30,7 @@
                 </div>
             </div>
         </div>
-        <a href="/thema/{{chapter.url}}">
+        <a *ngIf="chapter.title === 'Vuur' || chapter.title === 'Water' || chapter.title === 'Hoogte' || chapter.title === 'Materiaal' || chapter.title === 'Verkeer' || chapter.title === 'Welzijn' || chapter.title === 'Drugs, tabak en alcohol'" href="{{'/thema/' + chapter.title.toLowerCase()}}" >
             Meer lezen over {{chapter.title}}...
         </a>
     </section>
